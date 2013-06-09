@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282E59C11761D0630038DCEF /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 282E59C01761D0630038DCEF /* CustomCollectionViewCell.m */; };
+		2832A2B9176306EC00FF3974 /* layout.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2832A2B8176306EC00FF3974 /* layout.xml */; };
+		2832A2BD17633C2D00FF3974 /* RXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2832A2BC17633C2D00FF3974 /* RXMLElement.m */; };
+		2832A2BF17633CCE00FF3974 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2832A2BE17633CCE00FF3974 /* libz.dylib */; };
+		2832A2C117633CDC00FF3974 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2832A2C017633CDC00FF3974 /* libxml2.dylib */; };
+		2832A2C417633FF300FF3974 /* BasicLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2832A2C317633FF300FF3974 /* BasicLayoutItem.m */; };
 		285EB47A17607B4A00A6A93D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285EB47917607B4A00A6A93D /* UIKit.framework */; };
 		285EB47C17607B4A00A6A93D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285EB47B17607B4A00A6A93D /* Foundation.framework */; };
 		285EB47E17607B4A00A6A93D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285EB47D17607B4A00A6A93D /* CoreGraphics.framework */; };
@@ -18,9 +24,19 @@
 		285EB49017607B4B00A6A93D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 285EB48F17607B4B00A6A93D /* Default-568h@2x.png */; };
 		285EB49317607B4B00A6A93D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285EB49217607B4B00A6A93D /* ViewController.m */; };
 		285EB49617607B4B00A6A93D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285EB49417607B4B00A6A93D /* ViewController.xib */; };
+		285EB4A1176093BD00A6A93D /* CollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 285EB4A0176093BD00A6A93D /* CollectionLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		282E59BF1761D0630038DCEF /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		282E59C01761D0630038DCEF /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		2832A2B8176306EC00FF3974 /* layout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = layout.xml; sourceTree = "<group>"; };
+		2832A2BB17633C2D00FF3974 /* RXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXMLElement.h; sourceTree = "<group>"; };
+		2832A2BC17633C2D00FF3974 /* RXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXMLElement.m; sourceTree = "<group>"; };
+		2832A2BE17633CCE00FF3974 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2832A2C017633CDC00FF3974 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		2832A2C217633FF300FF3974 /* BasicLayoutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicLayoutItem.h; sourceTree = "<group>"; };
+		2832A2C317633FF300FF3974 /* BasicLayoutItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicLayoutItem.m; sourceTree = "<group>"; };
 		285EB47617607B4A00A6A93D /* CollectionViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285EB47917607B4A00A6A93D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		285EB47B17607B4A00A6A93D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +53,8 @@
 		285EB49117607B4B00A6A93D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		285EB49217607B4B00A6A93D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		285EB49517607B4B00A6A93D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		285EB49F176093BD00A6A93D /* CollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionLayout.h; path = ../CollectionLayout.h; sourceTree = "<group>"; };
+		285EB4A0176093BD00A6A93D /* CollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionLayout.m; path = ../CollectionLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2832A2C117633CDC00FF3974 /* libxml2.dylib in Frameworks */,
+				2832A2BF17633CCE00FF3974 /* libz.dylib in Frameworks */,
 				285EB47A17607B4A00A6A93D /* UIKit.framework in Frameworks */,
 				285EB47C17607B4A00A6A93D /* Foundation.framework in Frameworks */,
 				285EB47E17607B4A00A6A93D /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2832A2BA17633C2D00FF3974 /* RaptureXML */ = {
+			isa = PBXGroup;
+			children = (
+				2832A2BB17633C2D00FF3974 /* RXMLElement.h */,
+				2832A2BC17633C2D00FF3974 /* RXMLElement.m */,
+			);
+			path = RaptureXML;
+			sourceTree = "<group>";
+		};
 		285EB46D17607B4A00A6A93D = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +102,8 @@
 		285EB47817607B4A00A6A93D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2832A2C017633CDC00FF3974 /* libxml2.dylib */,
+				2832A2BE17633CCE00FF3974 /* libz.dylib */,
 				285EB47917607B4A00A6A93D /* UIKit.framework */,
 				285EB47B17607B4A00A6A93D /* Foundation.framework */,
 				285EB47D17607B4A00A6A93D /* CoreGraphics.framework */,
@@ -83,11 +114,19 @@
 		285EB47F17607B4A00A6A93D /* CollectionViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				2832A2BA17633C2D00FF3974 /* RaptureXML */,
+				2832A2B8176306EC00FF3974 /* layout.xml */,
 				285EB48817607B4B00A6A93D /* AppDelegate.h */,
 				285EB48917607B4B00A6A93D /* AppDelegate.m */,
+				285EB49F176093BD00A6A93D /* CollectionLayout.h */,
+				285EB4A0176093BD00A6A93D /* CollectionLayout.m */,
+				2832A2C217633FF300FF3974 /* BasicLayoutItem.h */,
+				2832A2C317633FF300FF3974 /* BasicLayoutItem.m */,
 				285EB49117607B4B00A6A93D /* ViewController.h */,
 				285EB49217607B4B00A6A93D /* ViewController.m */,
 				285EB49417607B4B00A6A93D /* ViewController.xib */,
+				282E59BF1761D0630038DCEF /* CustomCollectionViewCell.h */,
+				282E59C01761D0630038DCEF /* CustomCollectionViewCell.m */,
 				285EB48017607B4A00A6A93D /* Supporting Files */,
 			);
 			path = CollectionViewTest;
@@ -163,6 +202,7 @@
 				285EB48E17607B4B00A6A93D /* Default@2x.png in Resources */,
 				285EB49017607B4B00A6A93D /* Default-568h@2x.png in Resources */,
 				285EB49617607B4B00A6A93D /* ViewController.xib in Resources */,
+				2832A2B9176306EC00FF3974 /* layout.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +216,10 @@
 				285EB48617607B4B00A6A93D /* main.m in Sources */,
 				285EB48A17607B4B00A6A93D /* AppDelegate.m in Sources */,
 				285EB49317607B4B00A6A93D /* ViewController.m in Sources */,
+				285EB4A1176093BD00A6A93D /* CollectionLayout.m in Sources */,
+				282E59C11761D0630038DCEF /* CustomCollectionViewCell.m in Sources */,
+				2832A2BD17633C2D00FF3974 /* RXMLElement.m in Sources */,
+				2832A2C417633FF300FF3974 /* BasicLayoutItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +306,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CollectionViewTest/CollectionViewTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = "CollectionViewTest/CollectionViewTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -273,6 +318,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CollectionViewTest/CollectionViewTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SDK_DIR)\"/usr/include/libxml2";
 				INFOPLIST_FILE = "CollectionViewTest/CollectionViewTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -298,6 +344,7 @@
 				285EB49B17607B4B00A6A93D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
