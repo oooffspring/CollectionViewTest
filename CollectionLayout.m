@@ -12,7 +12,7 @@
 
 - (CGSize)collectionViewContentSize
 {
-    return CGSizeMake(320*3, 300);
+    return CGSizeMake(320*8, 300);
 }
 
 @end

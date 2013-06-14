@@ -13,6 +13,14 @@
 		2832A2BF17633CCE00FF3974 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2832A2BE17633CCE00FF3974 /* libz.dylib */; };
 		2832A2C117633CDC00FF3974 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2832A2C017633CDC00FF3974 /* libxml2.dylib */; };
 		2832A2C417633FF300FF3974 /* BasicLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2832A2C317633FF300FF3974 /* BasicLayoutItem.m */; };
+		284A622517697311005B758F /* ILSPolygonImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 284A621E17697311005B758F /* ILSPolygonImageView.m */; };
+		284A622617697311005B758F /* ILSHandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 284A622017697311005B758F /* ILSHandView.m */; };
+		284A622717697311005B758F /* ILSPivot.m in Sources */ = {isa = PBXBuildFile; fileRef = 284A622217697311005B758F /* ILSPivot.m */; };
+		284A622817697311005B758F /* ILSPolygonImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 284A622417697311005B758F /* ILSPolygonImagesView.m */; };
+		284A622E17697349005B758F /* ILSCLipper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 284A622B17697349005B758F /* ILSCLipper.mm */; };
+		284A622F17697349005B758F /* clipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284A622C17697349005B758F /* clipper.cpp */; };
+		284A62311769739C005B758F /* ILSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284A62301769739C005B758F /* ILSLog.framework */; };
+		284A6233176974FD005B758F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284A6232176974FD005B758F /* QuartzCore.framework */; };
 		285EB47A17607B4A00A6A93D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285EB47917607B4A00A6A93D /* UIKit.framework */; };
 		285EB47C17607B4A00A6A93D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285EB47B17607B4A00A6A93D /* Foundation.framework */; };
 		285EB47E17607B4A00A6A93D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285EB47D17607B4A00A6A93D /* CoreGraphics.framework */; };
@@ -25,18 +33,37 @@
 		285EB49317607B4B00A6A93D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285EB49217607B4B00A6A93D /* ViewController.m */; };
 		285EB49617607B4B00A6A93D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285EB49417607B4B00A6A93D /* ViewController.xib */; };
 		285EB4A1176093BD00A6A93D /* CollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 285EB4A0176093BD00A6A93D /* CollectionLayout.m */; };
+		288E4864176993CD000E0FA1 /* drag_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 288E4860176993CD000E0FA1 /* drag_icon.png */; };
+		288E4865176993CD000E0FA1 /* beauty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 288E4861176993CD000E0FA1 /* beauty.jpg */; };
+		288E4866176993CD000E0FA1 /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 288E4862176993CD000E0FA1 /* flower.jpg */; };
+		288E4867176993CD000E0FA1 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 288E4863176993CD000E0FA1 /* picture.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		282E59BF1761D0630038DCEF /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		282E59C01761D0630038DCEF /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
-		2832A2B8176306EC00FF3974 /* layout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = layout.xml; sourceTree = "<group>"; };
+		2832A2B8176306EC00FF3974 /* layout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = layout.xml; path = CollectionViewTest/layout.xml; sourceTree = "<group>"; };
 		2832A2BB17633C2D00FF3974 /* RXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXMLElement.h; sourceTree = "<group>"; };
 		2832A2BC17633C2D00FF3974 /* RXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXMLElement.m; sourceTree = "<group>"; };
 		2832A2BE17633CCE00FF3974 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2832A2C017633CDC00FF3974 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		2832A2C217633FF300FF3974 /* BasicLayoutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicLayoutItem.h; sourceTree = "<group>"; };
 		2832A2C317633FF300FF3974 /* BasicLayoutItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicLayoutItem.m; sourceTree = "<group>"; };
+		284A621D17697311005B758F /* ILSPolygonImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILSPolygonImageView.h; path = ../ILSPolygonImageView.h; sourceTree = "<group>"; };
+		284A621E17697311005B758F /* ILSPolygonImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILSPolygonImageView.m; path = ../ILSPolygonImageView.m; sourceTree = "<group>"; };
+		284A621F17697311005B758F /* ILSHandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILSHandView.h; path = ../ILSHandView.h; sourceTree = "<group>"; };
+		284A622017697311005B758F /* ILSHandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILSHandView.m; path = ../ILSHandView.m; sourceTree = "<group>"; };
+		284A622117697311005B758F /* ILSPivot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILSPivot.h; path = ../ILSPivot.h; sourceTree = "<group>"; };
+		284A622217697311005B758F /* ILSPivot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILSPivot.m; path = ../ILSPivot.m; sourceTree = "<group>"; };
+		284A622317697311005B758F /* ILSPolygonImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ILSPolygonImagesView.h; path = ../ILSPolygonImagesView.h; sourceTree = "<group>"; };
+		284A622417697311005B758F /* ILSPolygonImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ILSPolygonImagesView.m; path = ../ILSPolygonImagesView.m; sourceTree = "<group>"; };
+		284A622917697349005B758F /* ILSDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSDefines.h; sourceTree = "<group>"; };
+		284A622A17697349005B758F /* ILSCLipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSCLipper.h; sourceTree = "<group>"; };
+		284A622B17697349005B758F /* ILSCLipper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ILSCLipper.mm; sourceTree = "<group>"; };
+		284A622C17697349005B758F /* clipper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clipper.cpp; sourceTree = "<group>"; };
+		284A622D17697349005B758F /* clipper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = clipper.hpp; sourceTree = "<group>"; };
+		284A62301769739C005B758F /* ILSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ILSLog.framework; path = CollectionViewTest/RaptureXML/ILSLog.framework; sourceTree = "<group>"; };
+		284A6232176974FD005B758F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		285EB47617607B4A00A6A93D /* CollectionViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285EB47917607B4A00A6A93D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		285EB47B17607B4A00A6A93D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,6 +82,10 @@
 		285EB49517607B4B00A6A93D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		285EB49F176093BD00A6A93D /* CollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionLayout.h; path = ../CollectionLayout.h; sourceTree = "<group>"; };
 		285EB4A0176093BD00A6A93D /* CollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionLayout.m; path = ../CollectionLayout.m; sourceTree = "<group>"; };
+		288E4860176993CD000E0FA1 /* drag_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drag_icon.png; sourceTree = "<group>"; };
+		288E4861176993CD000E0FA1 /* beauty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beauty.jpg; sourceTree = "<group>"; };
+		288E4862176993CD000E0FA1 /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpg; sourceTree = "<group>"; };
+		288E4863176993CD000E0FA1 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +93,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284A6233176974FD005B758F /* QuartzCore.framework in Frameworks */,
 				2832A2C117633CDC00FF3974 /* libxml2.dylib in Frameworks */,
 				2832A2BF17633CCE00FF3974 /* libz.dylib in Frameworks */,
 				285EB47A17607B4A00A6A93D /* UIKit.framework in Frameworks */,
 				285EB47C17607B4A00A6A93D /* Foundation.framework in Frameworks */,
 				285EB47E17607B4A00A6A93D /* CoreGraphics.framework in Frameworks */,
+				284A62311769739C005B758F /* ILSLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +115,47 @@
 			path = RaptureXML;
 			sourceTree = "<group>";
 		};
+		2848929A1769CAF300BE6F36 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				285EB49F176093BD00A6A93D /* CollectionLayout.h */,
+				285EB4A0176093BD00A6A93D /* CollectionLayout.m */,
+				2832A2C217633FF300FF3974 /* BasicLayoutItem.h */,
+				2832A2C317633FF300FF3974 /* BasicLayoutItem.m */,
+				282E59BF1761D0630038DCEF /* CustomCollectionViewCell.h */,
+				282E59C01761D0630038DCEF /* CustomCollectionViewCell.m */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		284A621C176972AD005B758F /* Polygon */ = {
+			isa = PBXGroup;
+			children = (
+				284A622917697349005B758F /* ILSDefines.h */,
+				284A622A17697349005B758F /* ILSCLipper.h */,
+				284A622B17697349005B758F /* ILSCLipper.mm */,
+				284A622C17697349005B758F /* clipper.cpp */,
+				284A622D17697349005B758F /* clipper.hpp */,
+				284A621D17697311005B758F /* ILSPolygonImageView.h */,
+				284A621E17697311005B758F /* ILSPolygonImageView.m */,
+				284A621F17697311005B758F /* ILSHandView.h */,
+				284A622017697311005B758F /* ILSHandView.m */,
+				284A622117697311005B758F /* ILSPivot.h */,
+				284A622217697311005B758F /* ILSPivot.m */,
+				284A622317697311005B758F /* ILSPolygonImagesView.h */,
+				284A622417697311005B758F /* ILSPolygonImagesView.m */,
+			);
+			name = Polygon;
+			path = RaptureXML;
+			sourceTree = "<group>";
+		};
 		285EB46D17607B4A00A6A93D = {
 			isa = PBXGroup;
 			children = (
 				285EB47F17607B4A00A6A93D /* CollectionViewTest */,
 				285EB47817607B4A00A6A93D /* Frameworks */,
 				285EB47717607B4A00A6A93D /* Products */,
+				288E4868176993DE000E0FA1 /* Resource */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +170,8 @@
 		285EB47817607B4A00A6A93D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				284A6232176974FD005B758F /* QuartzCore.framework */,
+				284A62301769739C005B758F /* ILSLog.framework */,
 				2832A2C017633CDC00FF3974 /* libxml2.dylib */,
 				2832A2BE17633CCE00FF3974 /* libz.dylib */,
 				285EB47917607B4A00A6A93D /* UIKit.framework */,
@@ -114,19 +184,14 @@
 		285EB47F17607B4A00A6A93D /* CollectionViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				2848929A1769CAF300BE6F36 /* CollectionView */,
 				2832A2BA17633C2D00FF3974 /* RaptureXML */,
-				2832A2B8176306EC00FF3974 /* layout.xml */,
+				284A621C176972AD005B758F /* Polygon */,
 				285EB48817607B4B00A6A93D /* AppDelegate.h */,
 				285EB48917607B4B00A6A93D /* AppDelegate.m */,
-				285EB49F176093BD00A6A93D /* CollectionLayout.h */,
-				285EB4A0176093BD00A6A93D /* CollectionLayout.m */,
-				2832A2C217633FF300FF3974 /* BasicLayoutItem.h */,
-				2832A2C317633FF300FF3974 /* BasicLayoutItem.m */,
 				285EB49117607B4B00A6A93D /* ViewController.h */,
 				285EB49217607B4B00A6A93D /* ViewController.m */,
 				285EB49417607B4B00A6A93D /* ViewController.xib */,
-				282E59BF1761D0630038DCEF /* CustomCollectionViewCell.h */,
-				282E59C01761D0630038DCEF /* CustomCollectionViewCell.m */,
 				285EB48017607B4A00A6A93D /* Supporting Files */,
 			);
 			path = CollectionViewTest;
@@ -144,6 +209,18 @@
 				285EB48F17607B4B00A6A93D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		288E4868176993DE000E0FA1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2832A2B8176306EC00FF3974 /* layout.xml */,
+				288E4860176993CD000E0FA1 /* drag_icon.png */,
+				288E4861176993CD000E0FA1 /* beauty.jpg */,
+				288E4862176993CD000E0FA1 /* flower.jpg */,
+				288E4863176993CD000E0FA1 /* picture.png */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +280,10 @@
 				285EB49017607B4B00A6A93D /* Default-568h@2x.png in Resources */,
 				285EB49617607B4B00A6A93D /* ViewController.xib in Resources */,
 				2832A2B9176306EC00FF3974 /* layout.xml in Resources */,
+				288E4864176993CD000E0FA1 /* drag_icon.png in Resources */,
+				288E4865176993CD000E0FA1 /* beauty.jpg in Resources */,
+				288E4866176993CD000E0FA1 /* flower.jpg in Resources */,
+				288E4867176993CD000E0FA1 /* picture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +301,12 @@
 				282E59C11761D0630038DCEF /* CustomCollectionViewCell.m in Sources */,
 				2832A2BD17633C2D00FF3974 /* RXMLElement.m in Sources */,
 				2832A2C417633FF300FF3974 /* BasicLayoutItem.m in Sources */,
+				284A622517697311005B758F /* ILSPolygonImageView.m in Sources */,
+				284A622617697311005B758F /* ILSHandView.m in Sources */,
+				284A622717697311005B758F /* ILSPivot.m in Sources */,
+				284A622817697311005B758F /* ILSPolygonImagesView.m in Sources */,
+				284A622E17697349005B758F /* ILSCLipper.mm in Sources */,
+				284A622F17697349005B758F /* clipper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +391,11 @@
 		285EB49A17607B4B00A6A93D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CollectionViewTest/RaptureXML\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CollectionViewTest/CollectionViewTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SDK_DIR)\"/usr/include/libxml2";
@@ -316,6 +408,11 @@
 		285EB49B17607B4B00A6A93D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CollectionViewTest/RaptureXML\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CollectionViewTest/CollectionViewTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SDK_DIR)\"/usr/include/libxml2";

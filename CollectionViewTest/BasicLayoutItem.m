@@ -14,7 +14,8 @@
     NumbersOfSlots:(NSInteger)numbersOfSlots
               Type:(NSString*)type
       PointsString:(NSString*)pointsString
-       SlotsString:(NSString *)slotsString
+       SlotsString:(NSString*)slotsString
+     PolygonString:(NSString*)polygonString
 {
     //初始化
     self = [self init];
@@ -24,8 +25,16 @@
         self.type = type;
         self.pointsString = pointsString;
         self.slotsString = slotsString;
+        self.polygonString = polygonString;
+        [self setup];
     }
     return self;
+}
+
+- (void)setup
+{
+    [self setupVertexWithString:self.pointsString];
+    [self setupSlotsWithString:self.slotsString];
 }
 
 - (void)setupVertexWithString: (NSString *) pointStr {

@@ -14,10 +14,11 @@
     NumbersOfSlots:(NSInteger)numbersOfSlots
               Type:(NSString*)type
       PointsString:(NSString*)pointsString
-       SlotsString:(NSString *)slotsString;
+       SlotsString:(NSString*)slotsString
+     PolygonString:(NSString*)polygonString;
 
 @property (nonatomic) NSInteger index, numberOfSlots;
-@property (nonatomic, strong) NSString *type, *pointsString, *slotsString;
+@property (nonatomic, strong) NSString *type, *pointsString, *slotsString, *polygonString;
 @property (nonatomic, strong) NSMutableArray *vertex, *slots;
 @property (nonatomic) CGRect frame;
 

@@ -11,12 +11,14 @@
 #import "CustomCollectionViewCell.h"
 #import "RXMLElement.h"
 #import "BasicLayoutItem.h"
-
+#import "ILSPolygonImagesView.h"
 
 @interface ViewController () <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *basicLayoutArray;
+@property (nonatomic, strong) ILSPolygonImagesView *polygonView;
+@property (nonatomic, strong) UIButton *backButton;
 
 @end
 
@@ -36,8 +38,25 @@
     self.collectionView.pagingEnabled = YES;
     [self.view addSubview:self.collectionView];
     [self parseXML];
+    self.polygonView = [[ILSPolygonImagesView alloc] initWithFrame:CGRectMake(10, 30, 300, 300)];
+    
+    self.backButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [self.backButton addTarget:self action:@selector(presentCollectionView) forControlEvents:UIControlEventTouchUpInside];
+    [self.backButton setFrame:CGRectMake(100, 350, 120, 40)];
+    
+    [self.view addSubview:self.backButton];
+    self.backButton.hidden = YES;
     
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)presentCollectionView
+{
+    self.backButton.hidden = YES;
+    self.polygonView.hidden = YES;
+    [UIView animateWithDuration:.4 animations:^{
+        self.collectionView.center = CGPointMake(self.collectionView.center.x + 320, self.collectionView.center.y);
+    }];
 }
 
 - (void)parseXML
@@ -48,7 +67,7 @@
     
     [rootXML iterate:@"BasicLayout.layout" usingBlock:^(RXMLElement *layout){
         //解析layout 初始化layoutItem
-        BasicLayoutItem *basicLayoutItem = [[BasicLayoutItem alloc] initWithIndex:[layout attribute:@"num"].integerValue NumbersOfSlots:[layout attribute:@"numberOfSlots"].integerValue Type:[layout attribute:@"type"] PointsString:[layout attribute:@"points"] SlotsString:[layout attribute:@"slots"]];
+        BasicLayoutItem *basicLayoutItem = [[BasicLayoutItem alloc] initWithIndex:[layout attribute:@"num"].integerValue NumbersOfSlots:[layout attribute:@"numberOfSlots"].integerValue Type:[layout attribute:@"type"] PointsString:[layout attribute:@"points"] SlotsString:[layout attribute:@"slots"] PolygonString:[layout attribute:@"polygons"]];
         [self.basicLayoutArray addObject:basicLayoutItem];
     }];
     
@@ -68,7 +87,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 40;
+    return 120;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
@@ -124,6 +143,25 @@
             break;
     }
     self.collectionView.backgroundColor = color;
+    
+    if ([((BasicLayoutItem*)self.basicLayoutArray[indexPath.row]).type isEqualToString:@"basic"]) {
+        [self.polygonView setupSlotsWithString:((BasicLayoutItem *)self.basicLayoutArray[indexPath.row]).slotsString];
+    }
+    else
+    {
+        [self.polygonView setupSlotsWithString:((BasicLayoutItem *)self.basicLayoutArray[indexPath.row]).polygonString];
+    }
+    [self.polygonView setupVertexWithString:((BasicLayoutItem *)self.basicLayoutArray[indexPath.row]).pointsString];
+    [self.polygonView setupSubViewsForPolygons];
+
+    [UIView animateWithDuration:.4 animations:^{
+        self.collectionView.center = CGPointMake(self.collectionView.center.x - 320, self.collectionView.center.y);
+    } completion:^(BOOL finished){
+        [self.view addSubview:self.polygonView];
+        self.polygonView.hidden = NO;
+        self.backButton.hidden = NO;
+    }];
+    
 }
 
 
